@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  color: #111;
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 15px;
+}
+
+/* Box Container */
+.box-container {
+  background-color: #fff;
+  min-height: 50vh;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  /* overflow: hidden; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box {
+  width: 300px;
+  height: 300px;
+  margin: 160px;
+  background-color: #40739e;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+#box-container-colors {
+  position: absolute;
+  background-color: #fff;
+  color: #111;
+  border: 1px solid #ccc;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+}
+#box-container-colors .input-block label {
+  margin-right: 3px;
+}
+#box-container-colors .input-block:first-child {
+  margin-bottom: 1rem;
+}
+
+/* Generated CSS Container */
+.generated-css-container {
+  width: 50%;
+  margin: 1.5rem auto;
+  line-height: 2rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#generated-css {
+  font-family: Consolas, monaco, monospace;
+}
+#generated-css-copy-btn {
+  cursor: pointer;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  width: 5rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+#generated-css-copy-btn.success {
+  background-color: #10ac84;
+}
+#generated-css-copy-btn.error {
+  background-color: #c74b47;
+}
+
+/* Settings */
+.settings {
+  width: 90%;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.settings .input-block {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.settings .input-block label {
+  margin-bottom: 0.75rem;
+}
+.settings .input-block input {
+  width: 5rem;
+  height: 2rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+}
+.settings .input-block input[type="number"] {
+  padding-left: 0.5rem;
+}
+
+@media(max-width:1599px) {
+  h1 {
+    margin: 1.75rem 0;
+  }
+  .generated-css-container {
+    width: 60%;
+  }
+  #box {
+    width: 200px;
+    height: 200px;
+    margin: 110px;
+  }
+}
+@media(max-width:1199px) {
+  .generated-css-container {
+    width: 75%;
+  }
+}
+@media(max-width:959px) {
+  .settings .input-block {
+    flex-basis: 25%;
+  }
+  .generated-css-container {
+    width: 90%;
+  }
+}
+@media(max-width:767px) {
+  html {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
+  .box-container {
+    width: 95%;
+    min-height: 53vh;
+  }
+  #box {
+    width: 120px;
+    height: 120px;
+    margin: 70px;
+  }
+  #box-container-colors {
+    top: 0.25rem;
+    right: 0.25rem;
+    padding: 0.5rem;
+  }
+  #box-container-colors .input-block label {
+    margin-right: 2px;
+  }
+  #box-container-colors .input-block:first-child {
+    margin-bottom: 0.75rem;
+  }
+  .generated-css-container {
+    width: 95%;
+    margin: 1.5rem auto 1.25rem auto;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0;
+    position: relative;
+  }
+  #generated-css {
+    font-size: 10px;
+  }
+  #generated-css-copy-btn {
+    position: absolute;
+    right: .25rem;
+    font-size: 0.75rem;
+    width: 4.5rem;
+    border-radius: 0.25rem;
+
+    /* position: absolute;
+    right: 0.25rem;
+    top: -1rem;
+    font-size: 0.75rem;
+    width: 4.5rem;
+    border-radius: 0.25rem; */
+  }
+  .settings {
+    width: 95%;
+    margin: 1.25rem auto;
+  }
+  .settings .input-block {
+    padding: 0.75rem;
+    font-size: 1.25rem;
+  }
+}

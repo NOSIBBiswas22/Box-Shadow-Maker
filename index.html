@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Shadow Maker| Nosib Biswas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <h1>Box Shadow Editor</h1>
+    <div class="box-container">
+      <div id="box"></div>
+      <div id="box-container-colors">
+        <div class="input-block">
+          <label for="box-background">box:</label>
+          <input
+            type="color"
+            name="box-background"
+            id="box-background"
+            value="#40739e"
+          />
+        </div>
+        <div class="input-block">
+          <label for="box-container-background">background:</label>
+          <input
+            type="color"
+            name="box-container-background"
+            id="box-container-background"
+            value="#ffffff"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="generated-css-container">
+      <div id="generated-css">
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+      </div>
+      <!-- Create the "Copy to Clipboard" button dynamically with JavaScript, only if "navigator.clipboard" is supported by the browser -->
+      <button id="generated-css-copy-btn">Copy</button>
+    </div>
+
+    <div class="settings">
+      <div class="input-block">
+        <label for="h-offset">h-offset</label>
+        <input type="number" name="h-offset" id="h-offset" value="10" />
+      </div>
+      <div class="input-block">
+        <label for="v-offset">v-offset</label>
+        <input type="number" name="v-offset" id="v-offset" value="10" />
+      </div>
+      <div class="input-block">
+        <label for="blur-radius">blur</label>
+        <input
+          type="number"
+          min="0"
+          name="blur-radius"
+          id="blur-radius"
+          value="5"
+        />
+      </div>
+      <div class="input-block">
+        <label for="spread-radius">spread</label>
+        <input
+          type="number"
+          name="spread-radius"
+          id="spread-radius"
+          value="0"
+        />
+      </div>
+      <div class="input-block">
+        <label for="color">color</label>
+        <input type="color" name="color" id="color" value="#000000" />
+      </div>
+      <div class="input-block">
+        <label for="opacity">opacity</label>
+        <input
+          type="number"
+          min="0"
+          max="1"
+          step="0.01"
+          name="opacity"
+          id="opacity"
+          value="0.25"
+        />
+      </div>
+      <div class="input-block">
+        <label for="inset">inset</label>
+        <input type="checkbox" name="inset" id="inset" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
