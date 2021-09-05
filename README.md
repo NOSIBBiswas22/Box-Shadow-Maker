@@ -1,2 +1,2 @@
 # Box-Shadow-Maker
-Creating box shadow code for web devolpment
+Creating box shadow css code genarator for web devolpment
